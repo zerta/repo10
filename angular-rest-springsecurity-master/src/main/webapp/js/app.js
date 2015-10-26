@@ -120,6 +120,10 @@ function IndexController($scope, NewsService) {
 			$scope.newsEntries = NewsService.query();
 		});
 	};
+	$http.get('http://rest-service.guides.spring.io/greeting').
+	success(function(data){
+		$scope.greeting = data;
+	});
 };
 
 
