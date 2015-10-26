@@ -54,6 +54,11 @@
 		<div class="alert alert-danger" ng-show="error">{{error}}</div>
 		<div ng-view></div>
 	</div>
+	<div ng-controller="Hello">
+		<p>the Id is {{greeting.id}}</p>
+		<p>the content is {{greeting.content}}</p>
+	</div>
+	
 
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
 	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
@@ -63,5 +68,6 @@
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular-cookies.js"></script>
 	<script type="text/javascript" src="js/config.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/hello.js"></script>
 </body>
 </html>
